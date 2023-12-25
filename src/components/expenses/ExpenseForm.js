@@ -37,7 +37,7 @@ const Expenses = () => {
       dispatch(expenseAction.addDesc(description));
       dispatch(expenseAction.addCategory(selectedCategory));
       fetch(
-        `https://expensetracker-edd98-default-rtdb.firebaseio.com/userExpenses${userEmail}/${expenseId}.json`,
+        `https://expense-tracker-b2637-default-rtdb.firebaseio.com/userExpenses${userEmail}/${expenseId}.json`,
         {
           method: "PUT",
           body: JSON.stringify(expenseData),
@@ -65,7 +65,7 @@ const Expenses = () => {
       dispatch(expenseAction.addCategory(selectedCategory));
 
       fetch(
-        `https://expensetracker-edd98-default-rtdb.firebaseio.com/userExpenses${userEmail}.json`,
+        `https://expense-tracker-b2637-default-rtdb.firebaseio.com/userExpenses${userEmail}.json`,
         {
           method: "POST",
           body: JSON.stringify(expenseData),
@@ -98,7 +98,7 @@ const Expenses = () => {
 
   const fetchExpenses = useCallback(() => {
     fetch(
-      `https://expensetracker-edd98-default-rtdb.firebaseio.com/userExpenses${userEmail}.json`,
+      `hhttps://expense-tracker-b2637-default-rtdb.firebaseio.com/userExpenses${userEmail}.json`,
       {
         method: "GET",
         headers: {
@@ -156,7 +156,7 @@ const Expenses = () => {
 
   const deleteHandler = (id) => {
     fetch(
-      `https://expensetracker-edd98-default-rtdb.firebaseio.com/userExpenses${userEmail}/${id}.json`,
+      `https://expense-tracker-b2637-default-rtdb.firebaseio.com/userExpenses${userEmail}/${id}.json`,
       {
         method: "DELETE",
         headers: {

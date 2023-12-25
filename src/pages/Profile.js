@@ -15,7 +15,7 @@ const Profile = () => {
 
     try {
       const res = await fetch(
-        "https://identitytoolkit.googleapis.com/v1/accounts:update?key=AIzaSyBHW0kBQZMIDR2715ngfBopkWLxHe5ff0A",
+        "https://identitytoolkit.googleapis.com/v1/accounts:update?key=AIzaSyBu08q_9e1C_ld3aUKOXu2GPCVt3QXNELg",
         {
           method: "POST",
           body: JSON.stringify({
@@ -57,7 +57,7 @@ const Profile = () => {
       try {
         const token = localStorage.getItem("token");
         const res = await fetch(
-          "https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=AIzaSyBHW0kBQZMIDR2715ngfBopkWLxHe5ff0A",
+          "https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=AIzaSyBu08q_9e1C_ld3aUKOXu2GPCVt3QXNELg",
           {
             method: "POST",
             body: JSON.stringify({
